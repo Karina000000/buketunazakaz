@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-image: url('fon1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text-box {
+    background-image: url('fon2.png');
+    border: 2px solid #000; /* Черная рамка */
+    padding: 20px; /* Внутренние отступы */
+    z-index: 1; /* Размещает текст над фоном */
+    max-width: 100%; /* Максимальная ширина */
+    text-align: center; /* Центрирование текста */
+    color: #db03fc; /* Цвет текста для лучшей читабельности */
+    font-family: 'Pacifico', cursive; /* Рукописный шрифт */
+}
+.catalog {
+    display: flex;
+    flex-wrap: wrap; /* Обеспечивает перенос элементов на следующую строку, если они не помещаются */
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px;
+    background-image: url('background3.jpg'); /* Добавляем фоновое изображение */
+    background-size: cover; /* Растягиваем изображение, чтобы оно покрывало весь контейнер */
+    background-position: center; /* Центрируем изображение по центру */
+    min-height: 40vh; /* Минимальная высота равная высоте экрана */
+}
+.catalog-item {
+    width: calc(33.333% - 40px); /* Ширина для 3-х элементов в ряд с учетом отступов */
+    box-sizing: border-box; /* Учитывать отступы в ширину */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для карточек */
+    border: 2px solid #000; /* Черная рамка */
+    padding: 10px;
+    text-align: center;
+}
+.catalog-item img {
+    max-width: 250px; /* Максимальная ширина изображения */
+    max-height: 250px; /* Максимальная высота изображения */
+    width: auto;
+    height: auto;
+}
+.catalog-item p {
+    margin: 10px 0 0 0; /* Отступ сверху и убираем отступы по бокам и снизу */
+}
+</style>
+</head>
+<body>
+<div class="text-box">
+    <h1>Съедобные букеты</h1>
+    <h3>Для заказа обратитесь по телефону:</h3>
+    <p></p>
+</div>
+<div class="catalog">
+    <div class="catalog-item">
+        <img src="image1.jpg" alt="Букет 1">
+        <p>Букет 1</p>
+    </div>
+    <div class="catalog-item">
+        <img src="image2.jpg" alt="Букет 2">
+        <p>Букет 2</p>
+    </div>
+    <div class="catalog-item">
+        <img src="image3.jpg" alt="Букет 3">
+        <p>Букет 3</p>
+    </div>
+</div>
+</body>
+</html>
